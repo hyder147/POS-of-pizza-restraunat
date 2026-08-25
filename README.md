@@ -1,40 +1,49 @@
-# PizzaPoint_RestaurentManagementSystem
+# PizzaPoint — Restaurant Management System
 
-## Adobe XD Design Files
+A Point-of-Sale (POS) system built for pizza/restaurant businesses, developed in **C#** with a **SQL Server** backend. Handles order management, billing, and receipt printing for cashier/counter operations.
 
+## Features
 
-![Welcome Screen](https://user-images.githubusercontent.com/35813537/56824871-975f1d00-680c-11e9-98c6-ee1ee9022338.png)
+- Cashier/order entry screen for taking customer orders
+- Product & menu management (add/edit items, prices)
+- Bill generation with print-ready receipt output (PDF)
+- Sales tracking and order history
+- User/login management for staff access
 
-![Booking - Register Screen – 1](https://user-images.githubusercontent.com/35813537/56824901-ae9e0a80-680c-11e9-9e83-920fbe710daa.png)
+## Tech Stack
 
-![Booking - Register Screen](https://user-images.githubusercontent.com/35813537/56824907-b1006480-680c-11e9-8818-cbcbce372c3a.png)
+- **Language**: C#
+- **Database**: SQL Server (see `PizzaPoint.sql` for schema)
+- **IDE/Build**: Visual Studio (`.sln` solution file)
 
-![Deal Screen](https://user-images.githubusercontent.com/35813537/56824916-b362be80-680c-11e9-96eb-927d8bc3b258.png)
+## Getting Started
 
-![CashierRegister2](https://user-images.githubusercontent.com/35813537/57741736-0fce3680-7673-11e9-89b3-bc590caa2941.PNG)
+1. Clone the repository
 
-![login](https://user-images.githubusercontent.com/35813537/57741739-1066cd00-7673-11e9-94fe-725a83c8ee5c.PNG)
+```
+git clone https://github.com/hyder147/POS-of-pizza-restraunat.git
+```
 
-![ManageProduct](https://user-images.githubusercontent.com/35813537/57741741-1197fa00-7673-11e9-984b-122fc5d03382.PNG)
+2. Open `PizzaPoint.sln` in Visual Studio
 
-![orders](https://user-images.githubusercontent.com/35813537/57741742-12309080-7673-11e9-9b6e-69b7cc05cda1.PNG)
+3. Set up the database
+   - Create a new SQL Server database
+   - Run `PizzaPoint.sql` to create the schema and tables
+   - Update the connection string in the app's config to point to your database
 
-![prices](https://user-images.githubusercontent.com/35813537/57741743-1361bd80-7673-11e9-80c9-07483fa3ad8c.PNG)
+4. Build and run the solution from Visual Studio
 
-![product](https://user-images.githubusercontent.com/35813537/57741744-13fa5400-7673-11e9-85cb-28f118600211.PNG)
+## Sample Output
 
-![sales](https://user-images.githubusercontent.com/35813537/57741745-152b8100-7673-11e9-8092-250ef9820eb7.PNG)
+A sample generated bill (`Bill1.pdf`) is included in this repo, showing the receipt format produced by the system for a small thermal/receipt printer.
 
-![users](https://user-images.githubusercontent.com/35813537/57741747-165cae00-7673-11e9-8b3d-35310d9130ee.PNG)
+## Screenshots
 
-![Bill](https://user-images.githubusercontent.com/35813537/57741751-18bf0800-7673-11e9-8dc1-7738c74fef4c.PNG)
+*(Add your own screenshots of the login screen, order entry, product management, and billing views here)*
 
-![BillPrint](https://user-images.githubusercontent.com/35813537/57741754-19579e80-7673-11e9-9910-5af7c76b93f2.PNG)
+## Future Improvements
 
-![CashierRegister](https://user-images.githubusercontent.com/35813537/57741755-19f03500-7673-11e9-9105-f7bef40eabf8.PNG)
-
-![Bill2](https://user-images.githubusercontent.com/35813537/58278531-1afb2380-7d51-11e9-8f5d-b5a599d986ff.PNG)
-
-## PDF View Of Bill Which will be Print by Small Printing Printer
-
-![PDF](https://user-images.githubusercontent.com/35813537/58278537-20586e00-7d51-11e9-8c3c-b30b9b5e59be.PNG)
+- Migrate to a web-based interface (ASP.NET Core MVC)
+- Add role-based access control (admin vs cashier)
+- Add inventory tracking tied to sales
+- Cloud-hosted database option for multi-branch use
